@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Steroids App</title>
+
+  <!--<link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />-->
+  <link rel="stylesheet" href="/stylesheets/application.css" />
+  <link rel="stylesheet" href="/vendor/ionic/ionic.css" />
+  
+  <script src="/vendor/jquery/jquery-2.0.3.min.js"></script>
+
+  <script src="/javascripts/onerror.js"></script>
+  <script src="/javascripts/console.log.js"></script>
+  <script src="/javascripts/dashboard.js"></script>
+
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+  <script src="/javascripts/application.js"></script>
+  
+  
+</head>
+<body class="ionic-pseudo">
+  
+  
+  <div class="content-padded" id="dashboard">
+
+    <p>The revolution begins now, oh yeah, hello world...</p>
+
+<!--TODO: Figure out why login and logout buttuns aren't
+responding to css hidden class or jquery toggling as expected-->
+
+    
+    <div class="topcoat-button-bar full" id="buttons_login" style="-webkit-appearance:none;">
+        <div class="button-bar">
+          <a class="button" ontouchend="showLogin()">Login</a>
+          <a class="button" ontouchend="showNewAccount()">Create Account</a>
+    </div>
+        
+    <button class="button button-block hidden" id="button_logout" ontouchend="logout_account()">Logout</button>
+
+    
+  </div>
+  
+    <!--Load ionic js file-->
+    <script src="/vendor/ionic/ionic.min.js" />
+    <!--Code to check if user is already logged in-->
+    <script src="/javascripts/dashboard.js" />
+</body>
+</html>

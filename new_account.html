@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Steroids App</title>
+
+  <!--<link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />-->
+  <link rel="stylesheet" href="/stylesheets/application.css" />
+  <link rel="stylesheet" href="/vendor/ionic/ionic.css" />
+
+  <script src="/javascripts/onerror.js"></script>
+  <script src="/javascripts/console.log.js"></script>
+
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+  <script src="/javascripts/application.js"></script>
+</head>
+<body class="ionic-pseudo">
+  <div class="content-padded">
+
+    <h3>New Account</h3>
+
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Full Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Username">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Confirm Password">
+      </label>
+    </div>
+    <a class="button" ontouchend="steroids.modal.hide()">Submit</a>
+    
+  </div>
+  
+  <script src="/vendor/ionic/ionic.min.js"
+</body>
+</html>
