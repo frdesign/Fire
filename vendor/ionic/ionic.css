@@ -2535,7 +2535,7 @@ body, .ionic-body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  position: fixed;
+  /*position: fixed;*/  /*Commented out because it broke scrolling on ionic appgyver*/
   top: 0;
   right: 0;
   bottom: 0;

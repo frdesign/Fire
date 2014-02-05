@@ -5,16 +5,12 @@ $(window).on("load", function(){
     
     var userId = window.localStorage.getItem('userId');
     var userName = window.localStorage.getItem('userName');
-    if(userId !== undefined) {
-        
-        $('#button_logout').removeClass('hidden');
-        //FOR TESTING-REMOVE
-        //alert("user name: " + userName)
-        alert("token: " + window.localStorage.getItem('token'));
+    if(userId == null) {
+        //Login modal pops up if no user info is locally stored
+        showLogin();
         
     } else {
         // user is logged in, hide the login button, show the logout button
-        $('#buttons_login').removeClass('hidden');
         alert("user " + userId)
     }
 });
@@ -50,9 +46,3 @@ $(window).on("load", function(){
 
 
 
-
-function logout_account() {
-    window.localStorage.clear();
-    alert("You have logged out.");
-    window.location.reload();
-}
